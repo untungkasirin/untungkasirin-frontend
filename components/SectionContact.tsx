@@ -19,7 +19,7 @@ export default function SectionContact() {
         Mari berdiskusi, saya senang berbagi insight dan solusi yang relevan.
       </p>
       <a
-        href="https://wa.me/628xxxxxxx"
+        href="https://wa.me/6281286113557"
         target="_blank"
         className="btn-primary"
       >

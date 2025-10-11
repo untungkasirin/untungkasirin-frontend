@@ -51,7 +51,7 @@ export default function Footer() {
             <Youtube size={20} />
           </a>
           <a
-            href="https://wa.me/628xxxxxxx"
+            href="https://wa.me/6281286113557"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
