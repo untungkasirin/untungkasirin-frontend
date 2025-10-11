@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+/* ======================================================
+   🎨 BASE COLOR VARIABLES
+   ====================================================== */
+:root {
+  /* ===== LIGHT MODE ===== */
+  --background: #F8FAFC;         /* abu muda, lembut */
+  --foreground: #1E293B;         /* teks utama */
+
+  --color-surface: #FFFFFF;      /* dasar kartu/section putih */
+  --color-soft: #F1F5F9;         /* abu muda lembut untuk pembeda section */
+  --color-border: #E2E8F0;       /* pembatas lembut */
+
+  --color-primary: #F97316;      /* oranye khas brand */
+  --color-accent: #0EA5E9;       /* biru profesional */
+
+  --text-primary: #1E293B;
+  --text-secondary: #475569;
+
+  --radius-base: 0.75rem;
+}
+
+/* ===== DARK MODE ===== */
+.dark {
+  --background: #0D1117;         /* dasar hitam kebiruan (GitHub-like) */
+  --foreground: #E2E8F0;         /* teks terang */
+
+  --color-surface: #161B22;      /* panel abu gelap */
+  --color-soft: #1E2530;         /* pembeda section */
+  --color-border: #2A2F35;       /* garis tipis */
+
+  --color-primary: #FCA253;      /* oranye lembut */
+  --color-accent: #38BDF8;       /* biru lembut */
+
+  --text-primary: #E2E8F0;
+  --text-secondary: #94A3B8;
+}
+
+/* ======================================================
+   ⚙️ GLOBAL SETTINGS
+   ====================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter, sans-serif);
+  line-height: 1.6;
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+/* ======================================================
+   ✍️ TEXT & LINKS
+   ====================================================== */
+a {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: var(--color-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: var(--text-primary);
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+/* ======================================================
+   🟧 BUTTONS
+   ====================================================== */
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-base);
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.25s ease-in-out;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Dark Mode Adjustment */
+.dark .btn-primary {
+  background-color: var(--color-primary);
+  color: #1E293B;
+}
+.dark .btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Outline Button */
+.btn-outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-base);
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.25s ease-in-out;
+}
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* Dark Mode Adjustment */
+.dark .btn-outline {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+.dark .btn-outline:hover {
+  background-color: var(--color-primary);
+  color: #1E293B;
+}
+
+/* ======================================================
+   🧩 SECTIONS
+   ====================================================== */
+section {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.bg-surface {
+  background: var(--color-surface);
+}
+.bg-soft {
+  background: var(--color-soft);
+}
+.border-default {
+  border-color: var(--color-border);
+}
+
+/* ======================================================
+   🌌 FOOTER (THEME-AWARE)
+   ====================================================== */
+footer {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-surface); /* 🔹 putih di light mode */
+  color: var(--text-secondary);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ===== DARK MODE FOOTER ===== */
+.dark footer {
+  background: linear-gradient(180deg, #0D1117 0%, #000000 100%); /* navy gelap elegan */
+  color: var(--text-secondary);
+}
+
+/* Optional aurora glow hanya aktif di dark mode */
+.dark footer::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle at center, rgba(247, 156, 77, 0.25), transparent 70%);
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+footer > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ======================================================
+   🧠 UTILITIES
+   ====================================================== */
+.text-accent {
+  color: var(--color-accent);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+.border-accent {
+  border-color: var(--color-accent);
+}
+.text-primary {
+  color: var(--text-primary);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
