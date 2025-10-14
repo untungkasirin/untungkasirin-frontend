@@ -38,7 +38,7 @@ export default function SectionBook() {
             </ul>
             <div className="flex flex-wrap gap-4">
               <a href="#" className="btn-primary">Baca Cuplikan</a>
-              <a href="#" className="btn-outline">Dapatkan Bukunya</a>
+              <a href="/jago-cash-flow" className="btn-outline">Dapatkan Bukunya</a>
             </div>
           </div>
         </div>
