@@ -21,7 +21,7 @@ export default function SectionStory() {
           atau gaji karyawan. Dari pengalaman mengelola keuangan puluhan outlet dan beberapa perusahaan,
           saya belajar satu hal penting: <span className="font-semibold text-[var(--color-primary)]">arus kas adalah darah bisnis.</span>
         </p>
-        <a href="#tentang" className="btn-primary">Tentang Saya →</a>
+        <a href="/about" className="btn-primary">Tentang Saya →</a>
       </div>
     </motion.section>
   );

@@ -1,10 +1,9 @@
-import "./globals.css";
+import "../styles/globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
-import PageTransition from "@/components/PageTransition";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,14 +12,27 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Untung Kasirin — Finance Strategist & Tech Enthusiast",
+  metadataBase: new URL("https://untungkasirin.com"),
+  title: {
+    default: "Untung Kasirin — Finance Strategist & Tech Enthusiast",
+    template: "%s | Untung Kasirin",
+  },
   description:
-    "Official website of Untung Kasirin, a Finance Strategist, Book Author, and Tech Enthusiast helping business owners optimize cash flow and build data-driven systems.",
+    "Finance Strategist, Book Author, & Tech Enthusiast. Helping business owners manage cash flow, build strong systems, and make data-driven decisions.",
+  keywords: [
+    "Untung Kasirin",
+    "Finance Strategist",
+    "Cash Flow",
+    "Manajemen Keuangan",
+    "Buku Jago Cash Flow",
+    "ERP Bisnis",
+  ],
   openGraph: {
+    type: "website",
+    url: "https://untungkasirin.com",
     title: "Untung Kasirin — Finance Strategist & Tech Enthusiast",
     description:
       "Helping business owners optimize cash flow and build strong financial systems.",
-    url: "https://untungkasirin.com",
     siteName: "Untung Kasirin",
     images: [
       {
@@ -31,7 +43,6 @@ export const metadata = {
       },
     ],
     locale: "id_ID",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
@@ -42,36 +53,17 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id" suppressHydrationWarning>
       <body
         className={`${inter.variable} font-sans bg-[var(--background)] text-[var(--foreground)] transition-colors duration-500`}
       >
-        {/* 🌗 Theme Provider: Controls Light/Dark Mode */}
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {/* 🔝 Navbar */}
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Navbar />
-
-          {/* ✨ Page Transition Wrapper */}
-          <PageTransition>
-            <main className="pt-16 min-h-screen">{children}</main>
-          </PageTransition>
-
-          {/* 🆙 Scroll to Top */}
-          <ScrollToTop />
-
-          {/* ⚓ Footer */}
+          <main className="pt-16 min-h-screen">{children}</main>
           <Footer />
+          <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
