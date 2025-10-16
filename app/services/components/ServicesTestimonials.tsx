@@ -14,9 +14,9 @@ export default function ServicesTestimonials() {
     {
       quote:
         "Workshopnya ringan tapi mengena. Tim saya jadi paham bagaimana membaca laporan arus kas dan mengambil keputusan yang lebih baik.",
-      name: "Abdul Rozak",
-      title: "Direktur PT Rekayasa Unggul Indonesia",
-      photo: "/testimonials/testi-rozak.jpg",
+      name: "Hendra Aditya",
+      title: "CEO Ruang Baik",
+      photo: "/testimonials/testi-hendra.jpg",
     },
   ];
 
@@ -31,7 +31,7 @@ export default function ServicesTestimonials() {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-primary mb-12">
-          Apa Kata Klien?
+          Apa Kata Mereka?
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((t, i) => (

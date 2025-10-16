@@ -31,7 +31,7 @@ export default function TestimonialsClients() {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-primary mb-12">
-          Partner Bisnis
+          Apa Kata Mereka?
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((t, i) => (

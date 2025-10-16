@@ -7,16 +7,16 @@ export default function TestimonialsWorkshops() {
     {
       quote:
         "Pelatihannya ringan, interaktif, dan membuka wawasan. Banyak peserta yang jadi paham cara mengatur keuangan pribadi dengan lebih baik.",
-      name: "Annisa Rahma",
-      title: "HR Manager Master Kuliner Indonesia",
-      photo: "/testimonials/testi-annisa.jpg",
+      name: "Deni Sumarna",
+      title: "Founder & CEO PT Dinamika Daya Insan Mandiri",
+      photo: "/testimonials/testi-deni.jpg",
     },
     {
       quote:
         "Workshop yang dibawakan sangat relate dengan kondisi peserta. Cara penyampaiannya sederhana tapi berdampak besar.",
-      name: "Sam Ipoel",
-      title: "Inbound Marketing Practicioner & Founder ShankaraCiptaAI",
-      photo: "/testimonials/testi-sam.jpg",
+      name: "Ari Wibowo",
+      title: "Founder & CEO Master Kuliner Group",
+      photo: "/testimonials/testi-ari.jpg",
     },
   ];
 
@@ -31,7 +31,7 @@ export default function TestimonialsWorkshops() {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-bold text-primary mb-12">
-          Pelatihan & Workshop
+          Apa Kata Mereka?
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((t, i) => (
