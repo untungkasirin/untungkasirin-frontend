@@ -13,8 +13,8 @@ export default function TestimonialsBooks() {
     },
     {
       quote:
-        "Bahasanya membumi dan penuh analogi sederhana. Buku ini wajib dibaca siapa pun yang serius ingin bisnisnya bertahan lama.",
-      name: "Ai Nur Bayinah",
+        "Cash is the king, but flow is the key. Buku ini praktis, mudah dipahami, dan sarat manfaat. Wajib jadi panduan bagi siapa pun yang ingin menikmati aliran kas yang berkah dan berkesinambungan.",
+      name: "Dr. Ai Nur Bayinah",
       title: "Founder & CEO Halfinan Perencana Keuangan Syariah",
       photo: "/testimonials/testi-ai.jpg",
     },

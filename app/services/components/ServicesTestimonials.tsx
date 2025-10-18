@@ -6,14 +6,14 @@ export default function ServicesTestimonials() {
   const testimonials = [
     {
       quote:
-        "Pendekatannya sangat praktis dan sistematis. Setelah audit arus kas, kami jadi tahu kebocoran dan bisa memperbaikinya cepat.",
-      name: "Bei Fadilah",
-      title: "Direktur PT Empat Sahabat Automasi",
-      photo: "/testimonials/testi-bei.jpg",
+        "Buku ini menjelaskan pengelolaan uang dengan bahasa sederhana dan contoh yang mudah dimengerti. Relevan untuk siapa pun—mulai dari individu, keluarga, hingga bisnis besar.",
+      name: "Darto Damin, SE., MM, AAIK, ICPU, QCRO",
+      title: "Direktur PT Sunday Insurance Indonesia",
+      photo: "/testimonials/testi-darto.jpg",
     },
     {
       quote:
-        "Workshopnya ringan tapi mengena. Tim saya jadi paham bagaimana membaca laporan arus kas dan mengambil keputusan yang lebih baik.",
+        "Buku ini membuka mata saya bahwa cash flow adalah ‘nafas kehidupan organisasi’. Ditulis dengan bahasa sederhana dan analogi yang mudah, sangat relevan bahkan untuk lembaga sosial yang ingin berkelanjutan.",
       name: "Hendra Aditya",
       title: "CEO Ruang Baik",
       photo: "/testimonials/testi-hendra.jpg",

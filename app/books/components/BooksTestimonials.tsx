@@ -6,14 +6,14 @@ export default function BooksTestimonials() {
   const testimonials = [
     {
       quote:
-        "Buku ini seperti teman ngobrol yang menuntun pelaku usaha memahami inti bisnis: bukan sekadar omzet besar, tapi arus kas yang sehat.",
+        "Jago Cash Flow seperti teman ngobrol yang menuntun pelaku usaha memahami inti bisnis: bukan sekadar omzet besar, tapi arus kas yang sehat. Ditulis dengan bahasa ringan dan relevan untuk semua pelaku UMKM.",
       name: "Kamaludin Enuh",
       title: "CEO PT Jawara Edukasi Bisnis & Ketua Jaringan Wirausaha Kota Depok",
       photo: "/testimonials/testi-kamal.jpg",
     },
     {
       quote:
-        "Bahasanya membumi dan penuh analogi sederhana. Buku ini wajib dibaca siapa pun yang serius ingin bisnisnya bertahan lama.",
+        "Cash is the king, but flow is the key. Buku ini praktis, mudah dipahami, dan sarat manfaat. Wajib jadi panduan bagi siapa pun yang ingin menikmati aliran kas yang berkah dan berkesinambungan.",
       name: "Ai Nur Bayinah",
       title: "Founder & CEO Halfinan Perencana Keuangan Syariah",
       photo: "/testimonials/testi-ai.jpg",

@@ -6,15 +6,15 @@ export default function TestimonialsClients() {
   const testimonials = [
     {
       quote:
-        "Pendekatannya sangat praktis dan sistematis. Setelah audit arus kas, kami jadi tahu kebocoran dan bisa memperbaikinya cepat.",
-      name: "Dr Sepky Mardian",
+        "Buku ini mengingatkan bahwa cash flow lebih utama dari laba dan omzet. Panduan lengkap bagi siapa pun yang ingin lebih bijak mengelola uang—baik pribadi, keluarga, maupun bisnis.",
+      name: "Dr. Sepky Mardian",
       title: "Institut Agama Islam SEBI",
       photo: "/testimonials/testi-sepky.jpg",
     },
     {
       quote:
-        "Sistem keuangan yang dibangun benar-benar membantu. Sekarang kami bisa memantau posisi kas real-time di setiap divisi.",
-      name: "Wisnu Salman",
+        "Buku ini sangat bermanfaat bagi pengusaha kecil yang ingin naik kelas. Kita diajak memahami dan menghitung dengan cermat uang yang masuk dan keluar agar bisa langsung diterapkan dalam bisnis sehari-hari.",
+      name: "Ir. Wisnu Salman",
       title: "Direktur Operasional Asosiasi Tambang Batuan Indonenesia",
       photo: "/testimonials/testi-wisnu.jpg",
     },

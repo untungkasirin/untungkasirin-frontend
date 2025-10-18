@@ -6,14 +6,14 @@ export default function TestimonialsWorkshops() {
   const testimonials = [
     {
       quote:
-        "Pelatihannya ringan, interaktif, dan membuka wawasan. Banyak peserta yang jadi paham cara mengatur keuangan pribadi dengan lebih baik.",
-      name: "Deni Sumarna",
-      title: "Founder & CEO PT Dinamika Daya Insan Mandiri",
-      photo: "/testimonials/testi-deni.jpg",
+        "Saya sudah melewati krisis 1998, 2008, dan 2015. Pelajarannya jelas: hanya bisnis dengan cash flow sehat yang bisa bertahan. Buku ini mengajarkan caranya.",
+      name: "Thomas Dosy",
+      title: "CEO PT Bumi Cipta Rasa (Kenangan Brands)",
+      photo: "/testimonials/testi-thomas.jpg",
     },
     {
       quote:
-        "Workshop yang dibawakan sangat relate dengan kondisi peserta. Cara penyampaiannya sederhana tapi berdampak besar.",
+        "Jangan tunggu sampai terlambat—pelajari Jago Cash Flow karena bisa menjadi langkah nyata menyelamatkan bisnis Anda.",
       name: "Ari Wibowo",
       title: "Founder & CEO Master Kuliner Group",
       photo: "/testimonials/testi-ari.jpg",

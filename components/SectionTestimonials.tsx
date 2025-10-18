@@ -13,7 +13,7 @@ export default function SectionTestimoni() {
     },
     {
       nama: "Fitrah Muhammad",
-      jabatan: "Director & COO Lintasarta (Indosat Ooredoo Hutchison Group)",
+      jabatan: "Director & CCO Lintasarta (Indosat Ooredoo Hutchison Group)",
       foto: "/testimonials/testi-fitrah.jpg",
       teks: "Tidak seperti kebanyakan buku tentang manajemen finansial yang lain, buku ini berhasil escape dari jebakan teori dengan memberi contoh-contoh praktis sesuai realita di sekeliling kita.",
     },
